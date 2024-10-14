@@ -5,7 +5,7 @@ import { BiCartAlt } from "react-icons/bi";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import ImageOptimized from "../common/Image";
 import logo from "../../public/logo.png";
-import user from "../../public/user.png";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -24,7 +24,9 @@ export default function Header() {
         <div className="flex justify-between gap-8 w-[17%] items-center">
           <div className="profile gap-1 flex">
             <CgProfile className="text-xl" />
-            <span className="text-base">Sign In</span>
+            <Link href="/Login" passHref>
+              <a className="text-base">Sign In</a>
+            </Link>
           </div>
           <div className="cart gap-1 flex">
             <BiCartAlt className="text-xl" />

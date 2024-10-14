@@ -5,6 +5,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { getCorrectScreen } from "../utils/service";
 import MobileHeader from "../components/layout/MobileHeader";
+import { Routes } from "react-router-dom";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("DiningOut");
